@@ -1,0 +1,42 @@
+============================================================
+MAHALANOBIS OUTLIER REMOVAL - SUMMARY REPORT
+Reference: De Maesschalck et al. (2000)
+============================================================
+
+-- DATASET -------------------------------------------
+  Total images (master merged)  : 731
+  Feature variables             : 33
+
+-- MAHALANOBIS CONFIGURATION -------------------------
+  Covariance inverse : np.linalg.pinv (pseudo-inverse)
+  Confidence level   : 99%
+  Chi-sq threshold   : chi2.ppf(0.99, df=33) = 54.7755
+  Distance threshold : sqrt(chi2) = 7.4010
+  Outlier criterion  : D > 7.4010
+
+-- OUTLIER DETECTION RESULTS -------------------------
+  Outliers removed : 73
+  Clean samples    : 658
+
+  Outlier image numbers:
+    [1, 2, 3, 4, 5, 8, 9, 10, 13, 14, 21, 22, 24, 25, 30, 31, 33, 34, 36, 37, 39, 40, 42, 43, 109, 138, 214, 215, 246, 271, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 297, 301, 304, 336, 346, 350, 354, 358, 362, 363, 364, 438, 439, 442, 475, 492, 493, 500, 517, 565, 577, 578, 675, 690, 691, 700, 701, 702, 703, 704, 712]
+
+-- KENNARD-STONE SPLIT --------------------------------
+  Calibration set : 461 images  (70.1%)
+  Validation set  : 197 images  (29.9%)
+
+-- OUTPUT FILES --------------------------------------
+  master_merged.csv              - 731 rows
+  outlier_detection_results.csv  - 731 rows + distance & flag cols
+  soil_features_cleaned.csv      - 658 rows (outliers removed)
+  calibration_set.csv            - 461 rows (Kennard-Stone 70%)
+  validation_set.csv             - 197 rows (Kennard-Stone 30%)
+  mahalanobis_plot.png           - distance plot
+
+-- DISTANCE STATISTICS --------------------------------
+  Min    : 2.2501
+  Max    : 27.0000
+  Mean   : 5.0038
+  Median : 4.3237
+  Std    : 2.4330
+============================================================

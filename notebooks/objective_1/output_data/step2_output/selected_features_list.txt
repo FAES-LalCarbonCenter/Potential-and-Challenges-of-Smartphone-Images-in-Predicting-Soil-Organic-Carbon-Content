@@ -1,0 +1,15 @@
+SELECTED FEATURES (from calibration set)
+============================================================
+
+ 1. entropy
+ 2. median_h
+ 3. mean_s
+ 4. lab_b
+ 5. luv_u
+ 6. CI
+ 7. luv_v
+ 8. median_s
+ 9. median_r
+10. SI
+11. median_v
+12. mean_r

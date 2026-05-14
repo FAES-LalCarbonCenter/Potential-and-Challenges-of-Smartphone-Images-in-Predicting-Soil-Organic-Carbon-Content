@@ -1,0 +1,18 @@
+feature,reason,detail,threshold
+mean_g,not_significant,"p = 0.1657, r = -0.0647",p ≥ 0.1
+mean_b,not_significant,"p = 0.6670, r = 0.0201",p ≥ 0.1
+median_g,not_significant,"p = 0.1410, r = -0.0687",p ≥ 0.1
+median_b,not_significant,"p = 0.8749, r = 0.0074",p ≥ 0.1
+mean_h,not_significant,"p = 0.1352, r = -0.0697",p ≥ 0.1
+mean_gray,low_variance,variance = 0.005128,< 0.01
+median_gray,low_variance,variance = 0.006139,< 0.01
+contrast,not_significant,"p = 0.1560, r = 0.0662",p ≥ 0.1
+energy,low_variance,variance = 0.000005,< 0.01
+homogeneity,low_variance,variance = 0.000055,< 0.01
+HI,not_significant,"p = 0.2299, r = 0.0560",p ≥ 0.1
+lab_L,not_significant,"p = 0.1555, r = -0.0663",p ≥ 0.1
+lab_a,not_significant,"p = 0.7196, r = -0.0168",p ≥ 0.1
+luv_L,not_significant,"p = 0.1555, r = -0.0663",p ≥ 0.1
+xyz_X,low_variance,variance = 0.003389,< 0.01
+xyz_Y,low_variance,variance = 0.003669,< 0.01
+xyz_Z,low_variance,variance = 0.001347,< 0.01
