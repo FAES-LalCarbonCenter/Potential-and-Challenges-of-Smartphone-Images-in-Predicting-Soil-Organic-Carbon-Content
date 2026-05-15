@@ -1,4 +1,3 @@
-#Creating master csv for CNN input
 
 # Loads your Excel file with SOC and moisture values (e.g., image_processing_soc_values.xlsx).
 
