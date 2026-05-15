@@ -13,34 +13,6 @@ pip install -r requirements.txt
 - `soil_image_features_without_commas.csv`
 - `image_with_soc_metadata.csv`
 
-  Best Model according to AutoML based on only RMSE : WeightedEnsemble_L2
-  R²   = 0.7957
-  RMSE = 0.5021
-  MAE  = 0.1855
-  RPD  = 2.2123
-  RPIQ = 1.8322
-
- 
-
-  ENSEMBLE COMPOSITION
-================================================================================
-  WeightedEnsemble_L2 combines:
-    - NeuralNetTorch:  91.7%
-    - LightGBMLarge:    8.3%
-
-
-    TOP 10 MODELS:
-                 model  score_val  pred_time_val
-0  WeightedEnsemble_L2  -0.462987       0.014328
-1       NeuralNetTorch  -0.464283       0.009558
-2             CatBoost  -0.582114       0.003271
-3        LightGBMLarge  -0.592685       0.004190
-4              XGBoost  -0.676229       0.002924
-5        ExtraTreesMSE  -0.606122       0.027297
-6             LightGBM  -0.685139       0.000586
-7      RandomForestMSE  -0.624226       0.028064
-8           LightGBMXT  -0.642017       0.000810
-
 
 
 MODEL PERFORMANCE SUMMARY
