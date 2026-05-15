@@ -14,6 +14,8 @@ pip install -r requirements.txt
 - `image_with_soc_metadata.csv`
 
 
+The code and the respective output for each objective is in its respective folder as Objective 1,Objective 2 and Objective 3
+
 
 MODEL PERFORMANCE SUMMARY
 ================================================================================
