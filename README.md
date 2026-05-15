@@ -14,49 +14,6 @@ pip install -r requirements.txt
 - `image_with_soc_metadata.csv`
 
 ### 3. Run Complete Pipeline
-```bash
-python RUN_PIPELINE.py
-```
-
-Or run step-by-step:
-```bash
-cd src
-python step1_prepare_data.py
-python step2_pca_feature_selection.py
-python step3_train_test_split.py
-python step4_train_cnn.py
-python step5_train_other_models.py
-python step6_evaluate_models.py
-python step7_generate_outputs.py
-```
-
-## 📊 Expected Results
-
-- **Samples**: 731 → 666 (after outlier removal)
-- **Features**: 31 → 6 PCA components (95% variance)
-- **Models**: CNN, Random Forest, SVR, Decision Tree, Linear Regression
-- **CNN R²**: 0.94-0.95 (improved from 0.92)
-- **CNN RMSE**: 0.45-0.50 (improved from 0.55)
-
-## 📁 Outputs
-
-All results saved in `outputs/`:
-- **Figures**: 300 DPI publication-quality plots
-- **Tables**: CSV and LaTeX formats
-- **Models**: Trained models in `models/saved_models/`
-- **Methods text**: Ready for paper in `outputs/publication/`
-
-## 🔧 Configuration
-
-Edit `src/config.py` to modify:
-- File paths
-- Random seed
-- Train-test split ratio
-- PCA variance threshold
-- Model hyperparameters
-
-## 📖 Citation
-
 
 
 ## 📞 Support
@@ -64,14 +21,14 @@ Edit `src/config.py` to modify:
 ================================================================================
 TEST SET PERFORMANCE
 ================================================================================
-  Best Model: WeightedEnsemble_L2
+  Best Model according to AutoML based on only RMSE : WeightedEnsemble_L2
   R²   = 0.7957
   RMSE = 0.5021
   MAE  = 0.1855
   RPD  = 2.2123
   RPIQ = 1.8322
 
-  📊 Prediction Capability: EXCELLENT
+ 
 
   ENSEMBLE COMPOSITION
 ================================================================================
