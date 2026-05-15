@@ -1,6 +1,6 @@
 # SOC Prediction from Soil Images - Optimized Pipeline
 
-Complete, reproducible pipeline for predicting Soil Organic Carbon (SOC) from soil image features using PCA and multiple ML models.
+Complete, reproducible pipeline for predicting Soil Organic Carbon (SOC) from soil image features using Multi layer feature selection and multiple ML models selected by AutoML.
 
 ## 🚀 Quick Start
 
@@ -13,14 +13,6 @@ pip install -r requirements.txt
 - `soil_image_features_without_commas.csv`
 - `image_with_soc_metadata.csv`
 
-### 3. Run Complete Pipeline
-
-
-## 📞 Support
-
-================================================================================
-TEST SET PERFORMANCE
-================================================================================
   Best Model according to AutoML based on only RMSE : WeightedEnsemble_L2
   R²   = 0.7957
   RMSE = 0.5021
